@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Módulo MySQL</title>
+    <style>
+        body { background-color: #f0f8ff; color: #1b4f72; font-family: Arial; padding: 20px; }
+        .card { background: #eaf2f8; padding: 20px; border-radius: 8px; border: 1px solid #a9cce3; margin-bottom: 20px; }
+        .btn-volver { background: #5499c7; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; display: inline-block; margin-bottom: 15px; }
+        pre { background: #ffffff; padding: 12px; border-left: 4px solid #5499c7; overflow-x: auto; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+    
+    <div class="card">
+        <h1>Módulo: MySQL (Base de Datos, Tablas, Registros y Consultas)</h1>
+
+        <h3>Crear Base de Datos y Tablas:</h3>
+        <pre>CREATE DATABASE escuela;
+USE escuela;
+
+CREATE TABLE alumnos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    edad INT
+);</pre>
+
+        <h3>Insertar Registros:</h3>
+        <pre>INSERT INTO alumnos (nombre, edad) VALUES ('Carlos', 17), ('Ana', 16);</pre>
+
+        <h3>Consultas Básicas (SELECT):</h3>
+        <pre>SELECT * FROM alumnos;</pre>
+
+        <h3>Modificar / Actualizar Registros (UPDATE):</h3>
+        <pre>UPDATE alumnos SET edad = 18 WHERE id = 1;</pre>
+
+        <h3>Eliminar Registros (DELETE):</h3>
+        <pre>DELETE FROM alumnos WHERE id = 2;</pre>
+    </div>
+</body>
+</html>
